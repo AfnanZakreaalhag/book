@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة نون | عالم من الهدوء</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-brown: #4B3832; /* بني غامق للخطوط */
+            --soft-beige: #F7F3F0;    /* خلفية مريحة */
+            --accent-tan: #DDC5A2;    /* لوني خشبي فاتح */
+        }
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background-color: var(--soft-beige);
+            color: var(--primary-brown);
+        }
+        h1, .brand { font-family: 'Amiri', serif; }
+        
+        .book-card {
+            background: #fff;
+            border: 1px solid #eee;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .book-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(75, 56, 50, 0.1);
+            border-color: var(--accent-tan);
+        }
+        .custom-gradient {
+            background: linear-gradient(135deg, #4B3832 0%, #854442 100%);
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <nav class="py-6 px-8 flex justify-between items-center border-b border-stone-200 bg-white/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="brand text-3xl font-bold text-[#4B3832]">نُون</div>
+        <div class="hidden md:flex gap-8 font-medium text-sm tracking-wide">
+            <a href="#" class="hover:text-amber-700 transition">الرئيسية</a>
+            <a href="#" class="hover:text-amber-700 transition">الكتب</a>
+            <a href="#" class="hover:text-amber-700 transition">عن المكتبة</a>
+        </div>
+        <button class="bg-[#4B3832] text-white px-6 py-2 rounded-full text-sm hover:bg-[#362a26] transition shadow-md">
+            دخول
+        </button>
+    </nav>
+
+    <header class="container mx-auto px-6 py-16 text-center">
+        <div class="inline-block px-4 py-1 mb-4 border border-stone-300 rounded-full text-xs uppercase tracking-widest text-stone-500">
+            مرحباً بك في مكتبة نون
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 text-[#4B3832]">اقرأ.. لترتقي</h1>
+        <p class="max-w-2xl mx-auto text-stone-600 text-lg md:text-xl font-light">
+            مجموعة مختارة من الكتب التي تغذي الروح وتنمي العقل، في فضاء صُمم خصيصاً لعشاق الهدوء.
+        </p>
+    </header>
+
+    <section class="container mx-auto px-6 pb-24">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h2 class="text-3xl font-bold text-[#4B3832]">مختاراتنا لك</h2>
+                <div class="h-1 w-12 bg-amber-600 mt-2"></div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="book-card p-4 rounded-3xl">
+                <div class="aspect-[3/4] rounded-2xl mb-6 flex items-center justify-center bg-[#EFEBE9] overflow-hidden">
+                    <span class="text-6xl grayscale opacity-40">📔</span>
+                </div>
+                <div class="px-2">
+                    <h3 class="text-xl font-bold mb-2">ذائقه الموت</h3>
+                    <p class="text-stone-500 text-sm mb-4">د. ايمن العتوم • أدب عربي</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-[#854442]">قراءة الآن</span>
+                        <div class="h-8 w-8 rounded-full border border-stone-200 flex items-center justify-center hover:bg-stone-100 cursor-pointer">
+                            ←
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card p-4 rounded-3xl">
+                <div class="aspect-[3/4] rounded-2xl mb-6 flex items-center justify-center bg-[#D7CCC8] overflow-hidden text-white custom-gradient">
+                    <span class="text-6xl opacity-80">📜</span>
+                </div>
+                <div class="px-2">
+                    <h3 class="text-xl font-bold mb-2">مقدمة ابن خلدون</h3>
+                    <p class="text-stone-500 text-sm mb-4">ابن خلدون • فلسفة وتاريخ</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-[#854442]">قراءة الآن</span>
+                        <div class="h-8 w-8 rounded-full border border-stone-200 flex items-center justify-center hover:bg-stone-100 cursor-pointer">
+                            ←
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-card p-4 rounded-3xl">
+                <div class="aspect-[3/4] rounded-2xl mb-6 flex items-center justify-center bg-[#BCAAA4] overflow-hidden">
+                    <span class="text-6xl grayscale opacity-40">🖋️</span>
+                </div>
+                <div class="px-2">
+                    <h3 class="text-xl font-bold mb-2">كليلة ودمنة</h3>
+                    <p class="text-stone-500 text-sm mb-4">ابن المقفع • قصص وحكم</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-[#854442]">قراءة الآن</span>
+                        <div class="h-8 w-8 rounded-full border border-stone-200 flex items-center justify-center hover:bg-stone-100 cursor-pointer">
+                            ←
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-[#4B3832] text-[#DDC5A2] py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="brand text-4xl mb-6">نُون</div>
+            <p class="text-sm opacity-70 mb-8">حيث تولد الأفكار وتُحفظ الذاكرة.</p>
+            <div class="flex justify-center gap-6 text-xs uppercase tracking-widest">
+                <a href="#" class="hover:text-white transition">انستجرام</a>
+                <a href="#" class="hover:text-white transition">تويتر</a>
+                <a href="#" class="hover:text-white transition">الخصوصية</a>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/10 text-[10px] opacity-50">
+                &copy; 2024 مكتبة نون - صُمم بكل هدوء
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
