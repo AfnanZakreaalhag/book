@@ -1,0 +1,26 @@
+{
+  "name": "book-library",
+  "version": "1.0.0",
+  "description": "مكتبة نون - Arabic book library site with Vercel Web Analytics",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "vercel-build": "echo 'Static site ready for deployment'"
+  },
+  "keywords": [
+    "books",
+    "library",
+    "arabic",
+    "reading",
+    "analytics"
+  ],
+  "author": "Afnan Zakrea",
+  "license": "MIT",
+  "devDependencies": {
+    "@vercel/analytics": "^1.4.0"
+  },
+  "dependencies": {}
+}
